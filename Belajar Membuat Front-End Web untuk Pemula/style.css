@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+  color: #343a40;
+  line-height: 1.6;
+}
+
+header {
+  background: #6c63ff;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  margin: 0.5rem 0;
+}
+
+/* Form Styles */
+form {
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="checkbox"] {
+  width: calc(100% - 20px);
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+button {
+  background: #6c63ff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #5751d6;
+}
+
+/* Bookshelf Styles */
+section {
+  margin-bottom: 2rem;
+}
+
+#incompleteBookshelf,
+#completeBookshelf {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+#incompleteBookshelf > div,
+#completeBookshelf > div {
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#incompleteBookshelf > div h3,
+#completeBookshelf > div h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: #6c63ff;
+}
+
+#incompleteBookshelf > div p,
+#completeBookshelf > div p {
+  margin: 0.5rem 0;
+}
+
+#incompleteBookshelf > div div,
+#completeBookshelf > div div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+/* Button Styles */
+div div button {
+  flex: 1;
+  margin: 0 0.25rem;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  form div {
+    margin-bottom: 0.8rem;
+  }
+
+  button {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
+}
