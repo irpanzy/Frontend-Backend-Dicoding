@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <app-bar>Submission: Membangun Notes App</app-bar>
+
+    <main>
+      <section id="add-note-section">
+        <h2>Add a New Note</h2>
+        <form id="add-note-form">
+          <input type="text" id="note-title" placeholder="Title" required />
+          <textarea
+            id="note-body"
+            placeholder="Write your note here..."
+            required
+          ></textarea>
+          <button type="submit">Add Note</button>
+        </form>
+      </section>
+
+      <section id="notes-section">
+        <h2>Your Notes</h2>
+        <div id="notes-container" class="notes-grid"></div>
+      </section>
+    </main>
+
+    <script src="components/app-bar.js" type="module"></script>
+    <script src="components/note-item.js" type="module"></script>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
